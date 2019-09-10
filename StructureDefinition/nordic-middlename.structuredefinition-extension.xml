@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-basis-middlename" />
+  <id value="nordic-middlename" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2018-06-13T12:23:00.348+00:00" />
   </meta>
-  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
-  <version value="2.0.0" />
-  <name value="NoBasisMiddlename" />
-  <title value="no-basis-middlename" />
-  <status value="active" />
-  <date value="2018-10-26" />
+  <url value="http://hl7.nordic/fhir/StructureDefinition/nordic-middlename" />
+  <version value="0.1.0" />
+  <name value="NordicMiddlename" />
+  <title value="nordic-middlename" />
+  <status value="draft" />
+  <date value="2019-09-10" />
   <publisher value="Direktoratet for e-helse" />
-  <description value="The basis extension defines the Norwegian middlename wich is called &quot;mellomnavn&quot; and defined by Norwegian legislation (Lov om personnavn)." />
-  <purpose value="Specific usage of middle name as a specific part of official name standard where name order is important" />
+  <description value="The basis extension defines the Nordic middlename wich is called &quot;mellomnavn&quot;, &quot;mellemnavn&quot; or &quot;Mellannamn&quot; and defined by legislation in each country." />
+  <jurisdiction>
+    <text value="Norway" />
+  </jurisdiction>
+  <jurisdiction>
+    <text value="Sweden" />
+  </jurisdiction>
+  <jurisdiction>
+    <text value="Denmark" />
+  </jurisdiction>
+  <purpose value="Specific usage of middle name as a specific part of official name standard where name order is important&#xD;&#xA;&#xD;&#xA;The Nordic middlename is usually defined as a separate entity in the legislation of the Nordic countries. It is not considered a part of the given or family name but as a separate entity with specific use and definition. The legislation varies in the three countries where this concept is defined, but the main concept of the middlename is similar. The three countries where middlename is mentioned by legislation is Sweden, Denmark and Norway." />
   <fhirVersion value="4.0.0" />
   <kind value="primitive-type" />
   <abstract value="false" />
@@ -27,9 +36,12 @@
   <snapshot>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Defines a Norwegian middle name" />
-      <definition value="The basis extension defines the Norwegian middlename wich is called &quot;mellomnavn&quot; and defined by Norwegian legislation (Lov om personnavn)." />
+      <short value="Defines a Nordic middle name" />
+      <definition value="The basis extension defines the Nordic middlename and defined by legislation." />
+      <comment value="The Nordic middlename is usually defined as a separate entity in the legislation of the Nordic countries. It is not considered a part of the given or family name but as a separate entity with specific use and definition. The legislation varies in the three countries where this concept is defined, but the main concept of the middlename is similar. The three countries where middlename is mentioned by legislation is Sweden, Denmark and Norway." />
       <alias value="mellomnavn" />
+      <alias value="mellannamn" />
+      <alias value="mellemnavn" />
       <min value="0" />
       <max value="1" />
       <base>
@@ -354,9 +366,11 @@
       <path value="Extension.valueString" />
       <sliceName value="valueString" />
       <short value="The middlename" />
-      <definition value="The middle name of the person.&#xD;&#xA;The middlename should be a norwegian middlename as defined by norwegian legislation (Lov om personnavn)." />
+      <definition value="The middle name of the person according to the country legislation." />
       <comment value="A stream of bytes, base64 encoded" />
       <alias value="mellomnavn" />
+      <alias value="mellemnavn" />
+      <alias value="mellannamn" />
       <min value="0" />
       <max value="1" />
       <base>
@@ -417,17 +431,22 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Defines a Norwegian middle name" />
-      <definition value="The basis extension defines the Norwegian middlename wich is called &quot;mellomnavn&quot; and defined by Norwegian legislation (Lov om personnavn)." />
+      <short value="Defines a Nordic middle name" />
+      <definition value="The basis extension defines the Nordic middlename and defined by legislation." />
+      <comment value="The Nordic middlename is usually defined as a separate entity in the legislation of the Nordic countries. It is not considered a part of the given or family name but as a separate entity with specific use and definition. The legislation varies in the three countries where this concept is defined, but the main concept of the middlename is similar. The three countries where middlename is mentioned by legislation is Sweden, Denmark and Norway." />
       <alias value="mellomnavn" />
+      <alias value="mellannamn" />
+      <alias value="mellemnavn" />
       <max value="1" />
     </element>
     <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />
       <sliceName value="valueString" />
       <short value="The middlename" />
-      <definition value="The middle name of the person.&#xD;&#xA;The middlename should be a norwegian middlename as defined by norwegian legislation (Lov om personnavn)." />
+      <definition value="The middle name of the person according to the country legislation." />
       <alias value="mellomnavn" />
+      <alias value="mellemnavn" />
+      <alias value="mellannamn" />
       <type>
         <code value="string" />
       </type>
