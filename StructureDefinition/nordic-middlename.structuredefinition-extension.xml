@@ -413,7 +413,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
+      <fixedUri value="http://hl7.nordic/fhir/StructureDefinition/nordic-middlename" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -456,7 +456,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
+      <fixedUri value="http://hl7.nordic/fhir/StructureDefinition/nordic-middlename" />
     </element>
   </differential>
 </StructureDefinition>
