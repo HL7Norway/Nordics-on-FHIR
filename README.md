@@ -2,8 +2,8 @@
 Collaboration and common resources for the Nordic countries. 
 
 ## Plan
-### 2019-09-04
-Make a proposal for common Nordic extension "middlename". 
+### 2019-09-10
+Published the first Nordic extension for a Nordic "middlename". 
 
 ## Chat
 https://chat.fhir.org/#narrow/stream/194447-nordics
