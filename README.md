@@ -1,8 +1,7 @@
 # Nordics-on-FHIR
 Collaboration and common resources for the Nordic countries. 
 
-## Plan
-### 2019-09-10
+## 2019-09-10
 Published the first Nordic extension for a Nordic "middlename". 
 
 ## Chat
